@@ -9,45 +9,74 @@
 // want the ability to randonly reselect ** if result is undesirable
 
 // wants the ability to confirm if day trip is complete
-
 // display completed trip in the console
 
 // all single responsibility functions!
 
 // destination
-//Math.floor(Math.random() * 10) + 1) // rand 1-10
-//Math.floor(Math.random() * 3) // rand 0 - 2 (3 in total, 0 accounting for arr[0])
-//const RNG = Math.floor(Math.random() * 3) - 1;
-
 const destination = (arrayOfDesginations) => {
-  console.log(arrayOfDesginations);
+  let destinations = arrayOfDesginations;
+  let randomNum = Math.floor(Math.random() * destinations.length);
+
+  return destinations[randomNum];
 };
 
-let destinationList = ['Austin', 'San Francisco', 'Toronto'];
-destination(destinationList);
+let destinationsList = ['Austin', 'San Francisco', 'Toronto'];
+destination(destinationsList);
+//
+
+//
 
 //restaurant
 const restaurant = (arrayOfRestaurants) => {
-  console.log(arrayOfRestaurants);
+  let restaurants = arrayOfRestaurants;
+  let randomNum = Math.floor(Math.random() * restaurants.length);
+
+  return restaurants[randomNum];
 };
 
-let restaurantList = ['Mexican', 'Burgers', 'Italian'];
+let restaurantList = ['Tacos', 'Burgers', 'Spaghetti'];
 restaurant(restaurantList);
+//
+
+//
 
 //transportation
-
 const transportation = (modesOfTransportation) => {
-  console.log(modesOfTransportation);
+  let transportation = modesOfTransportation;
+  let randomNum = Math.floor(Math.random() * transportation.length);
+
+  return transportation[randomNum];
 };
 
 let transportationList = ['Plane', 'Train', 'Automobile'];
 transportation(transportationList);
+//
+
+//
 
 // entertainment
-
 const entertainment = (activities) => {
   console.log(activities);
+  let randomNum = Math.floor(Math.random() * activities.length);
+
+  return activities[randomNum];
 };
 
 let thingsToDo = ['Hiking', 'Sight seeing', 'Beach'];
 entertainment(thingsToDo);
+//
+
+//
+const isComplete = () => {};
+
+isComplete();
+//
+
+//
+
+//random trip planner!
+const trueAdventure = () => {};
+
+// re roll! // reselect if you dont like what you got the first time
+const reRoll = () => {};
