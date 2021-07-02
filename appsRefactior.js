@@ -1,9 +1,11 @@
+/*
 const data = {
   destinations: ['Austin', 'San Francisco', 'Toronto'],
   restaurants: ['Tacos', 'Burgers', 'Spaghetti'],
   transportation: ['Plane', 'Train', 'Automobile'],
   activities: ['Hiking', 'Sight seeing', 'Beach'],
 };
+*/
 // let destinationsList = ['Austin', 'San Francisco', 'Toronto'];
 // let restaurantList = ['Tacos', 'Burgers', 'Spaghetti'];
 // let transportationList = ['Plane', 'Train', 'Automobile'];
@@ -13,12 +15,27 @@ const data = {
 //
 //
 //
+const tripPlanner = (obj) => {
+  let randomIndex = Math.floor(Math.random() * obj.destinations.length);
+  let destination = obj.destinations[randomIndex];
+  let restaurant = obj.restaurants[randomIndex];
+  let transportation = obj.transportation[randomIndex];
+  let activity = obj.activities[randomIndex];
 
-//
-//
-//
-//
+  return `For our trip we are going to take a(n) ${transportation} to ${destination} and we are going to go ${activity} then eat ${restaurant}`;
+};
 
+const data = tripPlanner({
+  destinations: ['Austin', 'San Francisco', 'Toronto'],
+  restaurants: ['Tacos', 'Burgers', 'Spaghetti'],
+  transportation: ['Plane', 'Train', 'Automobile'],
+  activities: ['Hiking', 'Sight seeing', 'to the Beach'],
+});
+//
+//
+//
+//
+/*
 const getRandomValue = (arrayOfDesginations) => {
   let destinations = arrayOfDesginations;
   let randomNum = Math.floor(Math.random() * destinations.length);
@@ -103,3 +120,4 @@ const trueAdventure = () => {};
 
 // re roll! // reselect if you dont like what you got the first time
 //const reRoll = () => {};
+*/
