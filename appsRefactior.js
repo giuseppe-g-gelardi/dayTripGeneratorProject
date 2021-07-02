@@ -1,19 +1,24 @@
-// randomly select destination for trip
+const data = {
+  destinations: ['Austin', 'San Francisco', 'Toronto'],
+  restaurants: ['Tacos', 'Burgers', 'Spaghetti'],
+  transportation: ['Plane', 'Train', 'Automobile'],
+  activities: ['Hiking', 'Sight seeing', 'Beach'],
+};
+// let destinationsList = ['Austin', 'San Francisco', 'Toronto'];
+// let restaurantList = ['Tacos', 'Burgers', 'Spaghetti'];
+// let transportationList = ['Plane', 'Train', 'Automobile'];
+// let thingsToDo = ['Hiking', 'Sight seeing', 'Beach'];
+//
+//
+//
+//
+//
 
-// randomly select restaurant for trip
+//
+//
+//
+//
 
-// ** mode of transportation
-
-// ** form of entertainment
-
-// want the ability to randonly reselect ** if result is undesirable
-
-// wants the ability to confirm if day trip is complete
-// display completed trip in the console
-
-// all single responsibility functions!
-
-// destination
 const getRandomValue = (arrayOfDesginations) => {
   let destinations = arrayOfDesginations;
   let randomNum = Math.floor(Math.random() * destinations.length);
@@ -68,6 +73,16 @@ entertainment(thingsToDo);
 //
 
 //
+
+//
+
+//
+
+//
+
+//
+//this is a separate function \/\/\/\/\/\/\/
+//
 const isComplete = () => {
   let verification = prompt("Is your trip  complete? (Enter 'Yes' or 'No')");
 
@@ -82,3 +97,9 @@ isComplete();
 //
 
 //
+
+//random trip planner!
+const trueAdventure = () => {};
+
+// re roll! // reselect if you dont like what you got the first time
+//const reRoll = () => {};
