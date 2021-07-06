@@ -1,3 +1,0 @@
-//Math.floor(Math.random() * 10) + 1) // rand 1-10
-//Math.floor(Math.random() * 3) // rand 0 - 2 (3 in total, 0 accounting for arr[0])
-//const RNG = Math.floor(Math.random() * 3) - 1;
